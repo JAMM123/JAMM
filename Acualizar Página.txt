@@ -1,0 +1,7 @@
+git init
+git status
+git add .
+git status
+git commit -m "Actualizacion"
+git remote add origin https://github.com/JAMM123/JAMM.git
+git push -u origin master

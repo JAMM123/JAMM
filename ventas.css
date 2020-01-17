@@ -238,3 +238,8 @@ nav a{
         transform: scale(10%);
     }
 }
+.NoHay{
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+}
