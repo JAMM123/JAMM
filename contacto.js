@@ -1,6 +1,5 @@
 let boton = document.getElementById("icono");
 let enlaces = document.getElementById("enlaces");
-let form = document.getElementById("form");
 let i = 0;
 let botton =document.getElementById("boton");
 
@@ -15,7 +14,4 @@ boton.addEventListener("click", function(){
         i = 0;
         document.getElementById("form").style.visibility="visible";
     }
-})
-boton.addEventListener("click", function(){
-    boton.className = ("form");
 })

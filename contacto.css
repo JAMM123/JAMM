@@ -1,13 +1,12 @@
 :root{
     --colorTextos: #49454567;
 }
-
 *, ::before, ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Cuerpo */
 body{
     background: #ad5389; 
     background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
@@ -19,7 +18,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+/* Menú */
 nav{
     position: fixed;
     top: 20px;
@@ -27,13 +26,11 @@ nav{
     display: flex;
     justify-content: flex-start;
 }
-
 nav a{
     color: #fff;
     text-decoration: none;
     display: inline-block;
 }
-
 nav a{
     display: inline-block;
     padding: 7px 0;
@@ -45,14 +42,11 @@ nav a{
     border-radius: 50px;
     background: #fff;
 }
-
 .icono{
     display: block;
     animation: moverIzquierda 1s ease-in;
     z-index: 100;
 }
-
-
 .enlaces{
     position: fixed;
     display: flex;
@@ -68,42 +62,39 @@ nav a{
     background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
     background: linear-gradient(to right, #2ebf91, #8360c3);
 }
-
+/* Animación del menú */
 .uno{
     -webkit-clip-path: circle(140.9% at 0 0);
     clip-path: circle(0% at 0 0);
 }
-
 .dos{
     -webkit-clip-path: circle(150% at 0 0);
     clip-path: circle(150% at 0 0);
 }
-
+/* Titulo del formulario */
 h1{
     text-align: center;
     margin: 10px 0;
     font-weight: 800;
 }
-
+/* Formulario */
 form{
     background: #fff;
-    width: 30%;
+    width: 35%;
     padding: 10px 0;
     border-radius: 20px;
     box-shadow: 0 0 6px o rgba(255, 255, 255, 0.8);
     animation: moverDerecha 1s ease-in;
 } 
-
 .form{
     width: 100%;
     margin: auto;
 }
-
 form .grupo{
     position: relative;
     margin: 45px;
 }
-
+/* Area del mensaje */
 input, textarea{
     background: none;
     color: #c6c6c6;
@@ -115,26 +106,22 @@ input, textarea{
     border-bottom: 1px solid var(--colorTextos);
     resize: none;
 }
-
 input:focus, textarea:focus{
     outline: none;
     color: rgb(94, 93, 93);
 }
-
 input:focus~label, input:valid~label{
     position: absolute;
     top: -14px;
     font-size: 12px;
     color: #2196F3;
 }
-
 textarea:focus~label, textarea:valid~label{
     position: absolute;
     top: -14px;
     font-size: 12px;
     color: #2196F3;
 }
-
 label{
     color: var(--colorTextos);
     font-size: 16px;
@@ -144,17 +131,14 @@ label{
     transition: 0.3s ease-in all;
     pointer-events: none;
 }
-
 input:focus~.barra::before, textarea:focus~.barra::before{
     width: 100%;
 }
-
 .barra{
     position: relative;
     display: block;
     width: 100%;
 }
-
 .barra::before{
     content: '';
     height: 2px;
@@ -165,7 +149,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     transition: 0.3s ease all;
     left: 0%;
 }
-
+/* Botón de enviar */
 button{
     background: #11998e;
     background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
@@ -180,9 +164,7 @@ button{
     margin: 10px auto;
     cursor: pointer;
 }
-
-
-
+/* Configuración de las animaciones */
 @keyframes moverIzquierda{
     0%{
         opacity: 0;
@@ -193,7 +175,6 @@ button{
         transform: translate(0);
     }
 }
-
 @keyframes moverDerecha{
     0%{
         opacity: 0;
@@ -204,7 +185,6 @@ button{
         transform: translate(0);
     }
 }
-
 @keyframes moverArriba{
     0%{
         opacity: 0;
@@ -215,7 +195,6 @@ button{
         transform: translate(0);
     }
 }
-
 @keyframes moverAbajo{
     0%{
         opacity: 0;
@@ -226,4 +205,101 @@ button{
         transform: translate(0);
     }
 }
-
+/* Responsiva */
+@media screen and (max-width: 1000px){
+    form{
+    width: 45%;
+    }
+}
+@media screen and (max-width: 850px){
+    form{
+        width: 45%;
+    }
+    .form h1{
+        font-size: 25px;
+    }
+    input, textarea{
+        font-size: 15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 730px){
+    form{
+        width: 50%;
+    }
+    .form h1{
+        font-size: 22px;
+    }
+    input, textarea{
+        font-size: 13px;
+    }
+    label{
+        font-size: 13px;
+    }
+    button{
+        width: 75px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 620px){
+    form{
+        width: 50%;
+        height: auto;
+    }
+    .form h1{
+        font-size: 22px;
+    }
+    input, textarea{
+        font-size: 15px;
+    }
+    label{
+        font-size: 13px;
+    }
+    button{
+        width: 70px;
+        height: 28px;
+    }
+}
+@media screen and (max-width: 570px){
+    form{
+        width: 50%; 
+    }
+}
+@media screen and (max-width: 525px){
+    form{
+        width: 65%;
+    }
+    .form h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 460px){
+    form{
+        width: 55%;
+        height: 350px;
+    }
+    .form h1{
+        font-size: 17px;
+    }
+    form .grupo{
+        margin: 30px;
+    }
+}
+@media screen and (max-width: 320px){
+    form{
+        width: 65%;
+        height: 310px;
+    }
+    .form h1{
+        font-size: 15px;
+    }
+    form .grupo{
+        margin: 20px;
+    }
+}

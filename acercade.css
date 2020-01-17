@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Menú */
 nav{
     position: fixed;
     top: 20px;
@@ -52,7 +52,7 @@ nav a{
     background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
     background: linear-gradient(to right, #2ebf91, #8360c3);
 }
-
+/* Animación del menú */
 .uno{
     -webkit-clip-path: circle(140.9% at 0 0);
     clip-path: circle(0% at 0 0);
@@ -62,14 +62,15 @@ nav a{
     -webkit-clip-path: circle(150% at 0 0);
     clip-path: circle(150% at 0 0);
 }
-
+/* Animación del cambio de sección */
 html{
     scroll-behavior: smooth;
 }
-
+/* Cuerpo */
 body{
     font-family: 'Open Sans', sans-serif;
 }
+/* Secciones */
 section{
     height: 650px;
     display: flex;
@@ -129,7 +130,7 @@ img{
     width: auto;
     animation: moverAbajo 1s ease-in;
 }
-
+/* Titulo e información */
 .contenedor-texto h2{
     animation: moverIzquierda 1s ease-in;
 }
@@ -141,7 +142,7 @@ img{
 .contenedor-texto a{
     animation: moverArriba 1s ease-in;
 }
-
+/* Configuración de las animaciones */
 @keyframes moverIzquierda{
     0%{
         opacity: 0;
@@ -185,6 +186,7 @@ img{
         transform: translate(0);
     }
 }
+/* Pie de página */
 footer{
     width: 100%;
     background: #202020;
@@ -255,6 +257,7 @@ footer{
 .copyrigth{
     color: #c7c7c7;
 }
+/* Responsiva */
 @media screen and (max-width: 930px){
     img{
         height: 400px;
