@@ -89,8 +89,7 @@ nav a{
     -webkit-clip-path: circle(150% at 0 0);
     clip-path: circle(150% at 0 0);
 }
-/*Slider*/
-.slider{
+/* .slider{
     width: 300px;
     height: 200px;
     margin: 100px;
@@ -145,7 +144,7 @@ nav a{
     border: 2px solid #fff;
     width: 15px;
     height: 15px;
-}
+} */
 /*Descripción1*/
  .des1{ 
      text-align: left;
